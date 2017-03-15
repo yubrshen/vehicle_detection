@@ -1,0 +1,14 @@
+ident_config = {}                            # The map for configuration to identify cars
+ident_config['C_SVM'] = 0.75                  # the regularization coefficient, the smaller, the more regularization
+ident_config['cells_per_block'] = 3          # the number of cells per block dimension for HOG, change from 2
+ident_config['color_space'] = "YCrCb"        # the color space for feature detection, the other good candidate is HLS, "YCrCb"
+ident_config['default_color_space'] = "RGB"  # the default color space, due to reading from mpimg.imread
+ident_config['hist_bins'] = 32               # the number of bins for color histogram feature, change from 32, 48
+ident_config['orientation'] = 18             # the orientation numbers for HOG, change from 9
+ident_config['pix_per_cell'] = 8             # the numbers of pixels per cell dimension for HOG, change from 8
+ident_config['sample_window'] = 64           # the size of sample window size, change from 64  
+ident_config['scale'] = 1.6                  # the scaling factor for feature extraction, changed from 1.5, 2.0 getting better
+ident_config['spatial_size'] = 16            # the number of dimensions for spatial feature, changed from 16, 24
+ident_config['v_start'] = 413                # the vertical coordinate to start search for cars
+ident_config['v_stop'] = 720-220             # the vertical coordinate to stop search for cars
+ident_config['channels'] = '[0, 1, 2]'       # the list of color channels in string formaty
